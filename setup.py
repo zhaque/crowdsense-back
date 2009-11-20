@@ -11,6 +11,7 @@ version = '0.1'
 install_requires = [
     'setuptools',
     'saaskit-core',
+    'yos-social-sdk',
 ]
  
 extras_require = dict(
@@ -21,13 +22,17 @@ extras_require = dict(
  
 #AFAIK:
 install_requires.extend(extras_require['test'])
- 
+
+dependency_links = [
+        'http://pypi.saaskit.org/yos-social-sdk/',
+] 
+
 setup(
     name = "crowdsense",
     version = version,
     description = "Twitter Monitoring and Marketing Tool",
     long_description = read('README'),
-    author = 'Zaheed Haque',
+    author = 'CrowdSense',
     author_email = 'admin@crowdsense.com',
     url = 'http://crowdsense.com',
     packages = find_packages('src'),
@@ -39,5 +44,5 @@ setup(
     entry_points="""
       # -*- Entry points: -*-
       """,
-    dependency_links = [],
+    dependency_links = dependency_links,
 )
