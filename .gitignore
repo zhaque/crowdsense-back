@@ -1,0 +1,32 @@
+#Eclipse's specific
+.project
+.pydevproject
+.pydevproject.bak
+
+#buildout's specific
+.installed.cfg
+eggs/*
+bin/*
+develop-eggs/*
+parts/*
+downloads/*
+
+#egg's specific
+*.egg-info
+
+#defaults
+*.pyc
+*.pyo
+src/crowdsense/local_settings.py
+
+#coverage report
+src/test_a_khavr/coverage_report/*
+
+#sqlite3 db
+crowdsense.db
+
+#temp file
+tempfile
+
+#media
+src/crowdsense/site_media/*
