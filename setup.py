@@ -11,7 +11,6 @@ version = '0.1'
 install_requires = [
     'setuptools',
     'saaskit-core',
-    'yos-social-sdk',
 ]
  
 extras_require = dict(
@@ -24,7 +23,7 @@ extras_require = dict(
 install_requires.extend(extras_require['test'])
 
 dependency_links = [
-        'http://pypi.saaskit.org/yos-social-sdk/',
+        'http://pypi.saaskit.org/',
 ] 
 
 setup(
