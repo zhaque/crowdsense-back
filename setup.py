@@ -11,6 +11,9 @@ version = '0.1'
 install_requires = [
     'setuptools',
     'saaskit-core',
+    'geopy',
+    'pysolr',
+    'yos_social_sdk',
 ]
  
 extras_require = dict(
@@ -24,6 +27,10 @@ install_requires.extend(extras_require['test'])
 
 dependency_links = [
         'http://pypi.saaskit.org/',
+        'http://pypi.saaskit.org/geopy/',
+        'http://pypi.saaskit.org/yos-social-sdk/',
+        'http://pypi.saaskit.org/pysolr/',
+        'http://dist.repoze.org',
 ] 
 
 setup(
